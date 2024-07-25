@@ -2,7 +2,7 @@
 
 {% block content %}
 test content for forms
-<form method="POST" class="text-black">
+<form method="POST" class='text-pink-500'>
     {% csrf_token %}
     {{form.as_p}}
     <button type="submit">Search Store</button>
@@ -11,12 +11,15 @@ test content for forms
 
     {% if stores %}
 
-        <h2>Stores available</h2>
-        <ul>
-            {% for store in stores  %}
-                <li>{{store.name}} - {{store.location}}</li>
-            {% endfor %}
-        </ul>
+        <div class='m-4 text-center'>
+            <h2 class='text-2xl m-4 shadow-lg'>Stores available</h2>
+            <ul>
+                {% for store in stores  %}
+                    <li>{{store.name}} - {{store.location}}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        
 
     {% endif %}
 
