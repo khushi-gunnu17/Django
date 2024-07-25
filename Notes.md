@@ -10,7 +10,7 @@
 - django-admin startproject projectWithDjango       -- to setup the project
 - cd projectWithDjango
 - python manage.py runserver (portNumber, by default = 8000)     -- to run the project
-- python manage.py startapp django_app      -- to create a project
+- python manage.py startapp django_app      -- to create an app project
 
 
 ## tailwind configuration
@@ -34,13 +34,16 @@ add the theme app in the settings.py now
 - python manage.py tailwind start  (in another terminal)
 
 
+- python manage.py tailwind build  (for production grade and not for development)
+
+
 
 ## migrations
 - python manage.py migrate
 
 ## super user command
 - python manage.py createsuperuser
-- python manage.py changepassword Khushi
+- python manage.py changepassword Khushi (username here for changing the password)
 
 
 - python -m pip install Pillow

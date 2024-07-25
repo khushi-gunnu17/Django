@@ -7,9 +7,11 @@ App-detail Page
 
 {% block content %}
 
-    <h1>Khushi Sharma / fruit-detail page</h1>
+    <h1 class='bg-violet-500 text-4xl p-2 shadow-lg'>Khushi Sharma / fruit-detail page</h1>
 
-    <h3>{{fruit.name}}</h3>
-    <p>{{fruit.description}}</p>
+    <div class='hover:bg-violet-300 text-center text-3xl m-4 rounded-lg hover:text-black p-1 sticky left-[45%] w-[15%]'>
+        <h3>{{fruit.name}}</h3>
+    </div>
+    <p class='m-4 text-xl'>{{fruit.description}}</p>
 
 {% endblock %}

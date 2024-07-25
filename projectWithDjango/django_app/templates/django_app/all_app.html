@@ -9,13 +9,13 @@ App Page
 
     <h1>Khushi Sharma / all_app page</h1>
 
-    <div class='grid grid-cols-3 gap-4 m-4'>
+    <div class='grid grid-cols-4 gap-4 m-4'>
 
         {% for fruit in fruits %}
-            <div class='bg-blue-700 p-5 rounded'>
+            <div class='bg-violet-700 p-5 rounded'>
                 <img class='rounded shadow-lg' src={{fruit.image.url}} alt="image-url">
 
-                <h2 class='text-2xl font-bold'>{{fruit.name}}</h2>
+                <h2 class='text-2xl font-bold m-2'>{{fruit.name}}</h2>
 
                 <a href="{% url 'fruit_detail' fruit.id %}">      <!-- from the name given in the urls.py field -->
                     <button 

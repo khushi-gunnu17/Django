@@ -1,5 +1,6 @@
 {% load static tailwind_tags %}
 {% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
     
@@ -12,7 +13,9 @@
         Default Value
         {% endblock %}
     </title>
+    {% comment %} {% it is called templating engine %} {% endcomment %}
     <link rel="stylesheet" href="{% static 'styles.css' %}">
+    
     {% tailwind_css %}
 
 </head>

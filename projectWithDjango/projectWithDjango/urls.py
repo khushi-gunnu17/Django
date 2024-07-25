@@ -26,7 +26,7 @@ urlpatterns = [
     # slash is necessary here after the page route
     path('about/', views.about, name='about'),
     path('contact/', views.contact, name='contact'),
-    path('django_app/', include('django_app.urls')),
+    path('django_app/', include('django_app.urls')),    # path of the apps further made by us.
 
     # this path should always be at last. It is used for hot relaoding.
     path("__reload__/", include("django_browser_reload.urls"))

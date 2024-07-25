@@ -6,6 +6,7 @@ from .forms import FruitVarietyForm
 # Create your views here.
 def all_app(request) :
 
+    # arrays will come as the response here for fruits
     fruits = fruitVariety.objects.all()
 
     return render(request, 'django_app/all_app.html', {'fruits' : fruits})
